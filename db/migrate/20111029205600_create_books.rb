@@ -20,6 +20,7 @@ class CreateBooks < ActiveRecord::Migration
       t.integer :file_size
       t.string :product_dimensions
       t.string :shipping_weight
+      t.decimal :price, precision: 8, scale: 2
 
       t.timestamps
     end
