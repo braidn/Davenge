@@ -36,4 +36,7 @@ DavengeLib::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  #Raise an exception on mass assignment protection for AR models
+  config.active_record.mass_assignment_sanitizer = :strict
 end
